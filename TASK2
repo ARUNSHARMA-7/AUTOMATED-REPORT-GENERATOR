@@ -37,7 +37,7 @@ def generate_pdf(data, output_filename):
     elements.append(table)
     doc.build(elements)
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     data = read_data("data.csv")
     generate_pdf(data, "sample_report.pdf")
     print("PDF report generated successfully!")
